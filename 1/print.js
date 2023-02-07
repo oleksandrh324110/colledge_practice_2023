@@ -5,6 +5,11 @@ function print(s) {
 }
 
 function printxy(x, y) {
-  const t = '\t\t'
+  const t =
+    x.toString().length < 7
+      ? '\t\t\t'
+      : x.toString().length < 11
+      ? '\t\t'
+      : '\t'
   print('\t\t`x`: ' + x + t + '`y`: ' + y.toFixed(8))
 }
