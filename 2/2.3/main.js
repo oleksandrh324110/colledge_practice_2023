@@ -1,6 +1,4 @@
 // ----------------------------- 2.1 -----------------------------
-document.getElementById('result').innerHTML +=
-  '<b>2.1.2: `y = x`</b> <div id="plot1"></div> <b>2.1.6: `y = -abs(x)`</b> <div id="plot2"></div> <b>2.1.1: `y = sqrt(x^2)/x`</b> <div id="plot3"></div>'
 // ----------------------------- 2.1.2 -----------------------------
 
 functionPlot({
@@ -10,9 +8,9 @@ functionPlot({
   grid: false,
   data: [
     {
-      fn: 'x',
+      fn: 'log(abs (x))/log(10)',
       derivative: {
-        fn: '1',
+        fn: '1/(log(10)x)',
         updateOnMouseMove: true,
       },
     },
@@ -28,9 +26,9 @@ functionPlot({
   grid: false,
   data: [
     {
-      fn: '-abs(x)',
+      fn: 'abs(log(x) / log(4))',
       derivative: {
-        fn: '-x/abs(x)',
+        fn: 'log(x)/(log(4)*x*abs(log(x)))',
         updateOnMouseMove: true,
       },
     },
@@ -46,7 +44,11 @@ functionPlot({
   grid: false,
   data: [
     {
-      fn: 'sqrt(x^2)/x',
+      fn: 'log(x) / log(2.7118281828)',
+      derivative: {
+        fn: '1/x',
+        updateOnMouseMove: true,
+      },
     },
   ],
 })
