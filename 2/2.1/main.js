@@ -11,10 +11,10 @@ functionPlot({
       fn: 'x',
       derivative: {
         fn: '1',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
 
 // ----------------------------- 2.1.6 -----------------------------
@@ -29,10 +29,10 @@ functionPlot({
       fn: '-abs(x)',
       derivative: {
         fn: '-x/abs(x)',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
 
 // ----------------------------- 2.1.11 -----------------------------
@@ -44,7 +44,7 @@ functionPlot({
   grid: false,
   data: [
     {
-      fn: 'sqrt(x^2)/x',
-    },
-  ],
+      fn: 'sqrt(x^2)/x'
+    }
+  ]
 })

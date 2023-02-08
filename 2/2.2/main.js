@@ -11,10 +11,10 @@ functionPlot({
       fn: 'nthRoot(x, 4)^3',
       derivative: {
         fn: '3/(4*nthRoot(x, 4))',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
 
 // ----------------------------- 2.1.6 -----------------------------
@@ -29,10 +29,10 @@ functionPlot({
       fn: '-x^2',
       derivative: {
         fn: '-2x',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
 
 // ----------------------------- 2.1.11 -----------------------------
@@ -47,8 +47,8 @@ functionPlot({
       fn: '-x^3',
       derivative: {
         fn: '-3x^2',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })

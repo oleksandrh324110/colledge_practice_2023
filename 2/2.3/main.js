@@ -11,10 +11,10 @@ functionPlot({
       fn: 'log(abs (x))/log(10)',
       derivative: {
         fn: '1/(log(10)x)',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
 
 // ----------------------------- 2.1.6 -----------------------------
@@ -29,10 +29,10 @@ functionPlot({
       fn: 'abs(log(x) / log(4))',
       derivative: {
         fn: 'log(x)/(log(4)*x*abs(log(x)))',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
 
 // ----------------------------- 2.1.11 -----------------------------
@@ -47,8 +47,8 @@ functionPlot({
       fn: 'log(x) / log(2.7118281828)',
       derivative: {
         fn: '1/x',
-        updateOnMouseMove: true,
-      },
-    },
-  ],
+        updateOnMouseMove: true
+      }
+    }
+  ]
 })
