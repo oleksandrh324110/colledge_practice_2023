@@ -20,7 +20,7 @@ result.innerHTML +=
     .multiply(c, d)
     .toFixed(4))}/${(absSum = +(vecAbs(c) * vecAbs(d)).toFixed(4))} = ${(cos =
     multiply / absSum)}\`` +
-  `\n\n\t\t\`arccos alpha = ${math.acos(cos) * (180 / math.pi)}&deg;\``
+  `\n\n\t\t\`arccos cos alpha = ${math.acos(cos) * (180 / math.pi)}&deg;\``
 
 function vecAbs(vec) {
   return Math.sqrt(
