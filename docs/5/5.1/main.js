@@ -3,7 +3,7 @@ const result = document.getElementById('result')
 const arr = [
   [0, 1, 2],
   [1, 0, 1],
-  [-1, 2, 4],
+  [-1, 2, 4]
 ]
 
 const x = [-2, 4, 7]

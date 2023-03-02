@@ -12,8 +12,8 @@ let cos
 result.innerHTML +=
   `\t\`vec c = ${toString(c)}, vec d = ${toString(d)}\`` +
   '\n\n\tДля нормалізації вектора, треба кожну його кординату поділити на величину вектора:' +
-  `\n\n\t\t\`vec c = ${toString((c = vecNomrmalize(c)))}, vec d = ${toString(
-    (d = vecNomrmalize(d))
+  `\n\n\t\t\`vec c = ${toString((c = vecNormalize(c)))}, vec d = ${toString(
+    (d = vecNormalize(d))
   )}\`` +
   '\n\tТепер, ми можемо виразити кут між векторами за формулою `cos alpha = (vec a * vec b)/(abs(vec a) * abs(vec b))`:' +
   `\n\t\t\`cos alpha = ${(multiply = +math
@@ -30,7 +30,7 @@ function vecAbs(vec) {
   )
 }
 
-function vecNomrmalize(vec) {
+function vecNormalize(vec) {
   return math.matrix(vec.toArray().map((v) => +(v / vecAbs(vec)).toFixed(4)))
 }
 
