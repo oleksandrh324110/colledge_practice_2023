@@ -15,4 +15,4 @@ result.innerHTML += `\n\n\tЗнайдемо обернену матрицую д
 const inv = math.inv(matrix).map(v => +v.toFixed(2))
 result.innerHTML += `\n\n\t\t\`${matrix}^-1 = ${inv}\``
 
-result.innerHTML += `\n\n\t\`X = ${inv} * [[3], [0], [6], [11]] = ${math.multiply(inv, [[0], [0], [-2], [5]]).map(v => +v.toFixed(2))}\``
+result.innerHTML += `\n\n\t\t\`X = ${inv} * [[3], [0], [6], [11]] = ${math.multiply(inv, [[0], [0], [-2], [5]]).map(v => +v.toFixed(2))}\``
