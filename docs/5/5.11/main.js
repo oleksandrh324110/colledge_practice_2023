@@ -1,18 +1,6 @@
 const result = document.getElementById('result')
 
-const a = math.matrix([5, 2, 5])
-const b = math.matrix([2, -1, 2])
-
-const projectionab = math.multiply(a, b) / vecAbs(b)
-
 result.innerHTML +=
-  '\tЗнаходимо проекцію вектора `vec a` на вектор `vec b` за формулою `pr_vec b vec a = (vec a * vec b)/abs(vec b)`:' +
-  `\n\t\t\`pr_vec b vec a = ${math.multiply(a, b)}/${vecAbs(b)} = 6\``
-
-function vecAbs(vec) {
-  return Math.sqrt(
-    vec.toArray().reduce((abs, v) => {
-      return v ** 2 + abs
-    }, 0)
-  )
-}
+  `\tПлоща паралелограма побудованого на двух векторах \`vec a\` та \`vec b\`, дорівнює \`abs([a ** b])\`:\n
+   \t\t\`vec a ** vec b = (vec p + 2vec q) ** (3vec p - vec q) = 3(vec p ** vec p) - (vec p ** vec q) + 6(vec q ** vec p) - 2(vec q ** vec q) = 3 * 0 + (vec q ** vec p) + 6(vec q ** vec p) - 2 * 0 = 7(vec q ** vec p)\`
+   \t\t\`S = abs(vec a ** vec b) = abs(7(vec q ** vec p)) = 7 * abs(vec q) * abs(vec p) * sin(pi/6) = 7 * 2 * 1 * 1/2 = 7\``

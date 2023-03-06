@@ -29,7 +29,7 @@ functionPlot({
       fn: '((E^x) + (E^(-x))) / 2',
       graphType: 'polyline',
       derivative: {
-        fn: '-((E^x) - (E^(-x))) / 2',
+        fn: '(E^x - E^-x)/2',
         updateOnMouseMove: true
       }
     }
