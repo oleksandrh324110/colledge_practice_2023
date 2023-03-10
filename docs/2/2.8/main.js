@@ -12,12 +12,11 @@ functionPlot({
       graphType: 'polyline',
       derivative: {
         fn: 'x^x*(log(x)/log(E)+1)',
-        updateOnMouseMove: true
-      }
-    }
-  ]
+        updateOnMouseMove: true,
+      },
+    },
+  ],
 })
-
 
 functionPlot({
   target: '#plot2',
@@ -32,12 +31,11 @@ functionPlot({
       graphType: 'polyline',
       derivative: {
         fn: '(2*(x/3-1)*E^(-(x/3-1)^2))/-3',
-        updateOnMouseMove: true
-      }
-    }
-  ]
+        updateOnMouseMove: true,
+      },
+    },
+  ],
 })
-
 
 functionPlot({
   target: '#plot3',
@@ -50,12 +48,11 @@ functionPlot({
       graphType: 'polyline',
       derivative: {
         fn: '-cos(1/x)/x^2',
-        updateOnMouseMove: true
-      }
-    }
-  ]
+        updateOnMouseMove: true,
+      },
+    },
+  ],
 })
-
 
 functionPlot({
   target: '#plot4',
@@ -68,10 +65,10 @@ functionPlot({
       graphType: 'polyline',
       derivative: {
         fn: '(x*cos(x)-sin(x))/x^2',
-        updateOnMouseMove: true
-      }
-    }
-  ]
+        updateOnMouseMove: true,
+      },
+    },
+  ],
 })
 
 functionPlot({
@@ -84,7 +81,7 @@ functionPlot({
   data: [
     {
       fn: 'abs(x)^sin(abs(x))',
-      graphType: 'polyline'
-    }
-  ]
+      graphType: 'polyline',
+    },
+  ],
 })
