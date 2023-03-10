@@ -14,7 +14,9 @@ const rightMatrix = math.matrix([
 
 leftMatrix = math.inv(leftMatrix)
 
-result.innerHTML +=
-  `\tЗараз ми маємо рівняння виду \`A * X = C\`, де \`X = A^-1*C\`
+result.innerHTML += `\tЗараз ми маємо рівняння виду \`A * X = C\`, де \`X = A^-1*C\`
    \n\t\t\`[[1, 2, 0],[2, 5, -2], [0, -2, 5]]^-1 = ${leftMatrix}\`
-   \n\t\t\`X = ${leftMatrix} * ${rightMatrix} = ${math.multiply(leftMatrix, rightMatrix)}\``
+   \n\t\t\`X = ${leftMatrix} * ${rightMatrix} = ${math.multiply(
+  leftMatrix,
+  rightMatrix
+)}\``

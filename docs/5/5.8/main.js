@@ -7,13 +7,14 @@ const c = math.matrix([3, -4, 5])
 const ab = math.subtract(b, a)
 const ac = math.subtract(c, a)
 
-result.innerHTML +=
-  `\t\`vec (AB) = ${toString(b)} - ${toString(a)} = ${toString(ab)}\`
-   \t\`vec (AC) = ${toString(c)} - ${toString(a)} = ${toString(ac)}\`
+result.innerHTML += `
+    \t\`vec (AB) = ${matrixToVector(b)} - ${matrixToVector(a)} = ${matrixToVector(ab)}\`
+    \t\`vec (AC) = ${matrixToVector(c)} - ${matrixToVector(a)} = ${matrixToVector(ac)}\`
                      
-           \t\`cos (hat (vec (AB), vec (AC))) = (vec (AB) * vec (AC))/(abs(vec (AB)) * abs(vec (AC))) = ${math.multiply(ab, ac)}/(${math.norm(ab) * math.norm(ac)}) = -1\`
+           \t\`cos (hat (vec (AB), vec (AC))) = (vec (AB) * vec (AC))/(abs(vec (AB)) * abs(vec (AC))) = 
+              ${math.multiply(ab,ac)}/(${math.norm(ab) * math.norm(ac)}) = -1\`
            \t\`alpha = 180^circ\``
 
-function toString(vec) {
+function matrixToVector(vec) {
   return vec.toString().replaceAll('[', '(').replaceAll(']', ')')
 }
